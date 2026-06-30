@@ -1,0 +1,122 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body
+{
+	font-family:sans-serif;
+	background:#FC3;
+	
+}
+header
+{
+	position:inherit;
+	width:100%;
+	top:0;
+	left:0;
+	padding:20px;
+	background:#990033;
+	
+}
+header #botonmenu
+{
+	font-size:30px;
+	color:#FFF;
+	cursor:pointer;
+	
+		
+}
+
+/*.navegacion
+{
+	position:fixed;
+	top:100%;
+	left:0%;
+	width:100%;
+	height:100vh;
+	background:rgba(0,0,0,.0);
+	transition:background 2s);
+}*/
+.navegacion ul
+{
+	
+	width:320px;
+	height:100%;
+	background:#CF9;
+	list-style:none;
+	position:absolute;
+	top:0;
+	left:-320px;/*indica que la pantalla regrese*/
+	transition:left .3s;
+}
+.navegacion .menu li.titulomenu
+{
+	padding:20px;
+	background:#6F9;
+	color:#fff;
+	text-align::center;
+	font-size:22px;
+}
+.navegacion .menu a
+{
+	display:block;
+	padding:20px;
+	font-size:22px;
+	font-weight:700; /*equivale al grosor de las letras*/
+	text-decoration:none;/*para quitar la linea negra de bajo de las letras*/
+	color:#990033;
+	border-bottom: 2px solid #990033; /* Grosor, tipo de línea y color */
+	
+	
+}
+.navegacion .menu a:hover /*por encima cambia al pasar el puntero*/
+{
+	background:798da3;
+	color:#FFF;
+}
+.navegacion .menu li span.iconomenu
+{
+	margin:15px;
+	
+}
+.navegacion .menu .idsubmenu > a::after
+{ 
+	font: normal normal normal 14px/1 FontAwesome;
+ 	 font-size: inherit;
+ 	 text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	content:'\f105';
+	float:right;
+	color:#c5c5c5;
+	
+}
+/* submenu*/
+.navegacion .submenu li. titulomenu
+{
+	background:#fff;
+	color:#575d69;
+}
+.navegacion .submenu li.opatras
+{
+	padding:10px 20px;
+	background:#5f6f81;
+	color:#fff;
+	font-size:18px;
+	cursor:pointer;
+}
+.navegacion .submenu li.opatras::before
+{
+	font: normal normal normal 14px/1 FontAwesome;
+  	font-size: inherit;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	content:'\f0d9';
+  	margin:15px;
+}
+
+
+

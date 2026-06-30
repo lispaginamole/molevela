@@ -1,0 +1,132 @@
+/* CSS Document */
+*{
+	margin:0;/* para dejar un espacio entre la imagen y la pagina*/
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box; /* para el navegadorsafari, microsoft edg*/
+	-moz-box-sizing:border-box; /* para el navegador mozila, microsoft edg*/
+	
+}
+.partecarr 
+{
+	display:flex;
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+}
+ol,ul
+{
+	list-style:none;
+}
+body
+{
+	font-family:"Comic Sans MS",cursive;
+}
+img
+{
+	max-width:100%; /*para dejar la imagen al ancho de la pagina y no recorrerlo con la barra*/
+}
+.vercarrusel
+{
+	width:50%;
+	position:relative;
+	
+}
+.carrusel ol, ul
+{
+	width:100%;
+	}
+.carrusel li img
+{
+	width:100%;
+	display: flex;
+  	height: 200px; /* Define un alto para el contenedor */
+
+}
+.carrusel .texto
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0; /* no deja espacio en la parte superior*/
+	left:0;
+	padding:15px 50px;
+	display:flex;
+	flex-direction:column;/*con este coloca el texto aariba y el segundo renglon lo coloca abajo*/	
+	justify-content:center;/*coloar la imagen y el texto, todo lo que hay lo coloca al centro forma horizontal/
+	align-items:center;/*coloca el texto en medio de la imagen de forma vertical*/
+	text-align:center;/* para alinear el texto*/
+	color:#CCC;
+	z-index:1; /*para traer el texto o la imagen al frente*/
+}
+.carrusel .texto h1
+{
+	font-size:50px;
+}
+.carrusel .texto p
+{
+	margin-top:10px;
+	font-size:20;
+}
+.paginacion /* los puntos*/
+{
+	position:absolute;
+	top:102%;
+	width:100%;
+	display:flex;
+	justify-content:center;
+		
+	
+}
+.paginacion li
+{
+	font-size:20px;
+	margin:2px 5px;/* el 2px es para la parte superior e inferior y el 5px para los lados*/
+	color:#36C;
+	cursor:pointer; /* significa que se coloque la manita*/
+}
+
+.izq, .derecha
+{
+	position:absolute;
+	top:0;
+	height:100%;
+	display:flex;
+	align-items:center;
+	color:#FFF;
+	font-size:40px;
+	cursor:pointer;/*debe ir antes de z-index*/
+	z-index:2;
+	
+
+}
+.izq
+{
+	left:10px;
+	
+}
+.derecha
+{
+	right:10px;
+	
+}
+
+
+@media screen and (max-width:600px)  
+{
+	.carrusel .texto p{ /*esto es para que desaparesca el parrafo y disminuya el texto*/
+		display:none;
+	}
+	.carrusel .texto h1{
+		font-size:30px;
+	}
+	.izq, .derecha{ /* esta sirve para disminuir la frase se hace mas pequeña*/
+		font-size::20px;
+}
+.carrusel li img{ /* es para cuando la pantalla se redusca y llegue a los 500 o 600 la imagen redusca*/
+	width:500px;
+}
+.paginacion{
+	display:none;
+}
+}

@@ -1,0 +1,211 @@
+/* CSS Document */
+*{
+	
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+}
+body
+{
+	margin:0;
+}
+
+.contenedorcontenidoconta
+{
+	width:100%;
+	height:100%;
+	background-color:#FC3;
+	font-family:"Bradley Hand ITC";
+	font-size:20px;
+	color:#309;
+	display:flex;
+	align-items:center;
+	
+	
+}
+
+
+.cont1
+{
+	width:100%;
+	height:280px;
+	display: flex;
+	Justify-content: space-between;
+	gap:80px;
+	padding-top:20px;
+	
+}
+
+.cont1a
+{
+	width:30%;
+	height:100%;
+}
+.cont1a p
+{
+	margin-top:20px;
+	padding:10px;
+	
+}
+
+.cont2a
+{
+	width:35%;
+	height:100%;
+}
+.cont2a img
+{
+	width:110%;
+	height:100%;
+	margin:10px;
+	border-radius:50%;
+}
+/* parte de losmoles empaquetado 2*/
+
+.parte2
+{
+	margin:80px 0;
+}
+
+.cont3
+{
+	width:25p%;
+	height:100px;
+	display: flex;
+	Justify-content: space-between;
+	gap:120px;
+}
+.cont7a, .cont9a
+{
+	margin:15px;
+}
+
+/* licores seccion 3 del general*/
+.parte3
+
+.licores
+{
+	/*width:800px;
+	height:300px;*/
+	display: flex;
+	justify-content:space-evenly;
+	align-items:center;
+	flex-direction:column;
+	margin:10%;
+
+}
+ .recuadro .licor
+ {
+	background:rgb(215,228,189);
+	display: flex;
+	width:100%;
+	height:300px;
+	align-items:center;
+	border-radius:5px;
+	box-shadow:0 0 6px 0 rgba(0,0,0,0.6);
+		
+}
+.recuadro .licor img
+{
+	width:120px;
+	height:150px;
+	object-fit:cover;
+	border:3px solid #FFF;
+	border-radius:40%;
+	display:block;
+}
+.licor p
+{
+	text-align:right;
+	padding:20px 20px 0 0;
+}
+ .licor img
+{
+	width:300px;
+	height:200px;
+	margin:20px;
+	padding:5px;
+	
+		
+}
+.conttextarjeta p
+{
+	color:rgb(51,51,51);
+	text-align:center;
+	
+}
+
+.licores h2 
+{
+	
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;
+	color:rgb(0,0,0);
+		
+}
+
+@media screen and (max-width:800px)
+{
+	header
+	{
+		background-position:center;
+	}
+	
+	.cont1a p, .cont3a p
+	{
+		font-size:10px;
+		
+	}
+	.cont1a p, .cont3a p, .cont2a img 
+	{
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	.cont2a img
+	{
+		
+		width:120%
+		
+	}
+	
+	
+	.cont3  .cont7a img, .cont8a img, .cont9a img
+	{
+		height:30%;
+		
+	}
+	.licores, .licor img, .licor p
+	{
+		flex-direction:column;
+		height:50%;
+		font-size:15px;
+		text-align:left;
+		justify-content:center;
+		
+		
+	}
+	.licor p
+	{
+		
+		font-size:10px;
+		
+	}
+	.recuadro .licor
+	
+	{
+		
+		width:70%;
+		height:200px;
+			
+	}
+.recuadro .licor img
+{
+	width:80px;
+	height:70px; 
+		
+}
+
+}
